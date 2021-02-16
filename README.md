@@ -1,6 +1,6 @@
 # GH-Takeover
 
-### GitHub Pages Sub-domain Takeover
+### GitHub Pages Sub-domain Takeover Automation!
 
 **GH-Takeover** is a Shell Scripting program, which is used to automate the sub-domain takeover for GitHub Pages hosts.
 
