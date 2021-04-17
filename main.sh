@@ -18,7 +18,7 @@ SHA=$(curl -sH "Authorization: token "$token https://api.github.com/repos/$usern
 echo "Creating index.html in gh-pages!"
 curl -X PUT -sH "Authorization: token "$token -d '{"path": "index.html", "content": "'$webpage'", "message": "Initial Commit!", "branch": "gh-pages", "sha": "'$SHA'"}' https://api.github.com/repos/$username/$host/contents/index.html &> /dev/null
 
-sleep 1;
+sleep 5;
 
 echo "Adding the Host CNAME!"
 curl -X PUT -sH "Authorization: token "$token -d '{"path": "CNAME", "content": "'$cname'", "message": "Added CNAME!"}' https://api.github.com/repos/$username/$host/contents/CNAME &> /dev/null
